@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://cdn.jsdelivr.net/npm/phaser@3.60.0/dist/phaser-arcade-physics.min.js"></script>
+    <script>
+        var layoutSize = { 'w': 1024, 'h': 768 };
+        var X_POSITION;
+        var Y_POSITION;
+        var relativeSize;
+    </script>
+    <script src="scenePlay.js"></script>
+    <title>Coin Hunter - Binar</title>
+</head>
+
+<body>
+    <script>
+        const config = {
+            type: Phaser.AUTO,
+            width: 1024,
+            height: 768,
+            scene: [scenePlay],
+            physics: {
+                default: 'arcade',
+                arcade: {
+                    gravity: { y: 300 },
+                    debug: false
+                }
+            },
+            scale: {
+                autoCenter: Phaser.Scale.CENTER_BOTH,
+            }
+        };
+        const game = new Phaser.Game(config);
+    </script>
+</body>
+
+</html>
