@@ -14,11 +14,8 @@ Game platformer 2D klasik menggunakan Phaser 3. Kumpulkan koin, hindari musuh, d
 ```bash
 git clone https://github.com/username/coin-hunter.git
 cd coin-hunter
-python -m http.server 8000
+
 ```
-
-Buka `http://localhost:8000` di browser atau langsung buka file `index.html`.
-
 ## 🛠️ Teknologi
 
 - **Phaser 3** - Game framework
